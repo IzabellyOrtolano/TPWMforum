@@ -1,0 +1,25 @@
+composer create-project laravel/laravel forum
+
+php artisan serve
+
+php artisan make:model Topic --migration
+
+php artisan make:controller UserController
+
+
+TODA VEZ QUE PUXA DO GITHUB:
+
+-Apagar conteúdo de Git Ignore
+
+-Renomear a pasta ".env.example" para apenas ".env"
+
+-Rodar os seguintes códigos:
+
+composer install --no-scripts
+php artisan optimize
+
+php artisan key:generate
+php artisan route:clear
+php artisan cache:clear
+
+composer dump-autoload
