@@ -13,8 +13,8 @@ class UserController extends Controller
         return view('users.listAllUsers');
     }
 
-    public function listUserById(){
-
+    public function listUser($uid, Request $request){
+        print($uid);
     }
 
     public function createUser(){
